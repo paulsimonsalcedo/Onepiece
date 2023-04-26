@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Faster+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:wght@700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+#intro.show {
+  width: 100%;
+  height: 100%;
+  filter: saturate(60%);
+}
+
+.Opening {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/intro.jpg");
+  position: fixed;
+  filter: saturate(10%);
+  height: 100vh;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.Opening .inner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
+.Opening .inner .popup {
+  left: 10%;
+  margin: 15px;
+  font-family: "Courier Prime", monospace;
+  opacity: 0;
+  font-size: 130px;
+  color: rgb(248, 12, 12);
+}
+.Opening .inner .popup.introActive {
+  opacity: 1;
+  transition: 0.5s;
+  left: 50%;
+}
+.Opening .inner .popup.zoom {
+  font-size: 250px;
+  opacity: 0;
+  transition: 2s;
+}
+
+#intro.zeroHeight {
+  top: -100vh;
+  opacity: 0;
+  transition: 3s;
+}
+
+.hero {
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+.hero .inner-hero {
+  position: absolute;
+  top: 50%;
+  height: 250px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-left: 60px;
+  padding-right: 60px;
+}
+.hero .inner-hero .left-hero {
+  text-align: center;
+}
+.hero .inner-hero .left-hero h1 {
+  font-size: 50px;
+  font-family: "Faster One", cursive;
+  color: rgba(207, 52, 52, 0.808);
+}
+.hero .inner-hero .left-hero p {
+  color: #999999;
+  font-size: 25px;
+  font-family: "Courier New", Courier, monospace;
+}
+.hero .inner-hero .navbar {
+  position: relative;
+  height: 60px;
+  justify-content: center;
+  width: 100%;
+}
+.hero .inner-hero .navbar .horizontal {
+  width: 80%;
+  display: flex;
+  text-align: center;
+  height: 100%;
+  list-style: none;
+  justify-content: space-evenly;
+  padding: 0;
+}
+.hero .inner-hero .navbar .horizontal li a {
+  text-decoration: none;
+  color: #999999;
+  font-family: "Source Sans Pro", sans-serif;
+}/*# sourceMappingURL=style.css.map */
